@@ -17,7 +17,7 @@ This project is a Streamlit web application that predicts and forecasts gold pri
 Responsibilities:
     -Loads the CSV file uploaded by the user.
     -Calls functions for data preprocessing, model training, evaluation, and forecasting.
-    -Displays data, evaluation metrics, and forecasted prices in the Streamlit interface.
+    -Displays forecasted Gold prices in the Streamlit interface.
 
 # data_processing.py
 - This file handles the core data-related operations like loading, preprocessing, and splitting the dataset.
@@ -33,4 +33,4 @@ Functions:
 Functions:
     -train_model(X_train, y_train): Trains a Linear Regression model on the provided training data.
     -evaluate_model(model, X_test, y_test): Evaluates the model on the test data and returns metrics like MAE, MSE, RMSE, and R².
-    -forecast_prices(model, df, days=30): Predicts gold prices for the next 30 days based on the trained model.
+    -forecast_prices(model, df, days=30): Predicts gold prices for the next 60 days based on the trained model.
