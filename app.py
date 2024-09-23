@@ -33,5 +33,5 @@ def main():
         st.write("30-Day Forecasted Prices:")
         st.write(forecast_df)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
