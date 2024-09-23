@@ -26,7 +26,7 @@ def evaluate_model(model, X_test, y_test):
     }
     return metrics
 
-def forecast_prices(model, df, days=30):
+def forecast_prices(model, df, days=60):
     """Forecast prices for the next 'days' days."""
     last_date_ordinal = df['Date'].max()
     last_date = datetime.fromordinal(last_date_ordinal)

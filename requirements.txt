@@ -2,3 +2,5 @@ pandas == 2.2.2
 numpy == 1.24.2
 scikit-learn == 1.5.1
 streamlit == 1.37.0
+
+# The "Date" feature in the CSV file should be in "mm-dd-yyyy"

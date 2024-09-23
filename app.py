@@ -14,8 +14,8 @@ def main():
         df = preprocess_data(df)
         
        
-        st.write("Data Overview:")
-        st.write(df.head())
+        #st.write("Data Overview:")
+        #st.write(df.head())
         
       
         X_train, X_test, y_train, y_test = split_data(df)
@@ -24,13 +24,13 @@ def main():
         model = train_model(X_train, y_train)
         
         
-        metrics = evaluate_model(model, X_test, y_test)
-        st.write("Model Evaluation Metrics:")
-        st.write(metrics)
+        #metrics = evaluate_model(model, X_test, y_test)
+        #st.write("Model Evaluation Metrics:")
+        #st.write(metrics)
         
      
         forecast_df = forecast_prices(model, df)
-        st.write("30-Day Forecasted Prices:")
+        st.write("60-Day Forecasted Prices:")
         st.write(forecast_df)
 
 if __name__ == "__main__":
